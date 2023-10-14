@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * _printf - printf function.
@@ -9,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	int number;
+	unsigned int number;
 	char *str;
 	va_list args;
 		va_start(args, format);
@@ -35,16 +38,22 @@ int _printf(const char *format, ...)
 						j++;
 					}
 				}
+				else if (format[i] == '%')
+				{
+					i++;
+					_putchar(format[i]);
+				}
 				else if ( format[i] == 'd')
 				{
 					i++;
 					number = va_arg(args, int);
-					_putchar(number);
+					print_number(number);
 				}
 				else if (format[i] == 'i')
 				{
+					i++;
 					number = va_arg(args, int);
-					_putchar(number);
+					print_number(number);
 				}
 			}
 			_putchar(format[i]);
