@@ -24,7 +24,12 @@ int _printf(const char *format, ...)
 			}
 			if (format[i] == 's')
 			{
-				write(1, va_arg(args, char *), strlen(va_arg(args, char*)));
+				str = va_arg(args, char *);
+				while (*str)
+				{
+					_putchar(*str);
+					str++;
+				}
 			}
 		}
 		else

@@ -1,8 +1,10 @@
+#include <limits.h>
 #include <stdio.h>
 #include "main.h"
 
 int main(void)
 {
-	_printf("dias is testing %c it\n", "Z");
+	char *len = "test";
+	_printf("dthats a %s ", len);
 	return (0);
-}
+}		
