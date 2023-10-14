@@ -40,8 +40,8 @@ int _printf(const char *format, ...)
 				}
 				else if (format[i] == '%')
 				{
-					i++;
 					_putchar(format[i]);
+					i++;
 				}
 				else if ( format[i] == 'd')
 				{

@@ -4,41 +4,37 @@
 
 void print_number(unsigned int n)
 {
-	long m; /* power of 10 */
-	int c; /* boolean check */
-	long num; /* convert int to long */
+	long m;
+	int c;
+	long number;
 
-	num = n;
-	/* negatives */
-	if (num < 0)
-	{
-		num *= -1;
-		_putchar('-');
-	}
-
-	/* count up */
-	m = 1;
-	c = 1;
-	while (c)
-	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-		else
-			c = 0;
-	}
-
-	/* count down */
-	while (num >= 0)
-	{
-		if (m == 1)
+		number = n ;
+		if (number < 0)
 		{
-			_putchar(num % 10 + '0');
-			num = -1;
+			number *= -1;
+			_putchar('-');
 		}
-		else
+
+		m = 1;
+		c = 1;
+		while (c)
 		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
+			if (number / (m * 10) > 0)
+				m *= 10;
+			else
+				c = 0;
 		}
-	}
+		while (number >= 0)
+		{
+			if (m == 1)
+			{
+				_putchar(number % 10 + '0');
+				number = -1;
+			}
+			else
+			{
+				_putchar((number / m % 10) + '0');
+				m /= 10;
+			}
+		}
 }
