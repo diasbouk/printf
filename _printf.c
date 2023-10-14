@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 			{
 				write(1,va_arg(args, char *), 1);
 			}
-			if (format[i] == 's')
+			else if (format[i] == 's')
 			{
 				str = va_arg(args, char *);
 				while (*str)
@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 					str++;
 				}
 			}
+			else
+				break;
 		}
 		_putchar(format[i]);
 		i++;
