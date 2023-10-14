@@ -3,6 +3,6 @@
 
 int main(void)
 {
-	_printf("dias is testing it\n");
+	_printf("dias is testing %c it\n", "Z");
 	return (0);
 }
