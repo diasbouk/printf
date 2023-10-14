@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	unsigned int number;
+	long int number;
 	char *str;
 	va_list args;
 		va_start(args, format);
@@ -43,13 +43,11 @@ int _printf(const char *format, ...)
 					_putchar(format[i]);
 					i++;
 				}
-				else if ( format[i] == 'd')
+				else if (format[i] == 'p')
 				{
 					i++;
-					number = va_arg(args, int);
-					print_number(number);
-				}
-				else if (format[i] == 'i')
+					
+				else if ( format[i] == 'd' || format[i] == 'u' || format[i] == 'i')
 				{
 					i++;
 					number = va_arg(args, int);
