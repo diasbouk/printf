@@ -3,7 +3,7 @@
 /**
  * _printf - printf function.
  * @format: format
- * Return: number of chars
+ * Return: number of chars.
  */
 int _printf(const char *format, ...)
 {
