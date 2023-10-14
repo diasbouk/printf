@@ -43,7 +43,9 @@ int _printf(const char *format, ...)
 				}
 				else if (format[i] == 'i')
 				{
-					number = va_arg
+					number = va_arg(args, int);
+					_putchar(number);
+				}
 			}
 			_putchar(format[i]);
 			i++;
