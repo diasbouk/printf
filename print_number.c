@@ -12,7 +12,7 @@ void print_number(unsigned int n)
 		if (number < 0)
 		{
 			number = -number;
-			_putchar('-');
+			put_char('-');
 		}
 
 		m = 1;
@@ -28,12 +28,12 @@ void print_number(unsigned int n)
 		{
 			if (m == 1)
 			{
-				_putchar(number % 10 + '0');
+				put_char(number % 10 + '0');
 				number = -1;
 			}
 			else
 			{
-				_putchar((number / m % 10) + '0');
+				put_char((number / m % 10) + '0');
 				m /= 10;
 			}
 		}

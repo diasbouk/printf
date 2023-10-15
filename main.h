@@ -5,7 +5,9 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdarg.h>
-int _putchar(char c);
+#include <limits.h>
+int put_char(char c);
+void put_string(char *str);
 int _printf(const char *format, ...);
 void print_number(unsigned int n);
 #endif

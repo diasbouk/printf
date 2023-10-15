@@ -11,12 +11,11 @@
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
-	unsigned int j = 0;
 	long int number;
 	char *str;
 	va_list args;
 		va_start(args, format);
-		if (format == NULL)
+		if (format == NULL || ( format[0] == '%'&& !format[1]))
 			return (-1);
 		while (format[i] != '\0')
 		{
@@ -26,26 +25,19 @@ int _printf(const char *format, ...)
 				if (format[i] == 'c')
 				{
 					i++;
-					_putchar(va_arg(args, int));
+					put_char(va_arg(args, int));
 				}
 				else if(format[i] == 's')
 				{
 					i++;
 					str = va_arg(args, char *);
-					while (str[j] != '\0')
-					{
-						_putchar(str[j]);
-						j++;
-					}
+					put_string(str);
 				}
 				else if (format[i] == '%')
 				{
-					_putchar(format[i]);
+					put_char(format[i]);
 					i++;
 				}
-				else if (format[i] == 'p')
-				{
-					i++;
 					
 				else if ( format[i] == 'd' || format[i] == 'u' || format[i] == 'i')
 				{
@@ -54,7 +46,7 @@ int _printf(const char *format, ...)
 					print_number(number);
 				}
 			}
-			_putchar(format[i]);
+			put_char(format[i]);
 			i++;
 		}
 		va_end(args);
