@@ -11,14 +11,17 @@
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
+	long int number;
 	char c;
 	char *str;
 	va_list args;
 		va_start(args, format);
+		if (!format || (format[0] == '%' && !format[1]))
+			return (-1);
+		if (format[0] == '%' && format[1] == ' ' && !format[2])
+			return (-1);
 		while (format[i] != '\0')
 		{
-			if (!format || (format[0] == '%' && !format[1]))
-				return (-1);
 			if (format[i] == '%')
 			{
 				i++;
@@ -33,6 +36,12 @@ int _printf(const char *format, ...)
 					i++;
 					str = va_arg(args, char *);
 					put_string(str);
+				}
+				else if (format[i] == 'd' || format[i] == 'i')
+				{
+					i++;
+					number = va_arg(args, int);
+					print_number(number);
 				}
 				else if (format[i] == '%')
 				{
@@ -49,5 +58,5 @@ int _printf(const char *format, ...)
 			}
 		}
 		va_end(args);
-		return (i);
+		return (i - 1);
 }
