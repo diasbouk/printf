@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	char *str;
 	va_list args;
 		va_start(args, format);
-		if (format == NULL || ( format[0] == '%'&& !format[1]))
+		if (format == NULL || ( format[0] == '%' && !format[1]))
 			return (-1);
 		while (format[i] != '\0')
 		{
@@ -45,6 +45,8 @@ int _printf(const char *format, ...)
 					number = va_arg(args, int);
 					print_number(number);
 				}
+				else
+					return (-1);
 			}
 			put_char(format[i]);
 			i++;
