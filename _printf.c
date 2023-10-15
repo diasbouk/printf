@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 				{
 					c = va_arg(args, int);
 					put_char(c);
-					i++
+					i++;
 				}
 				else if (format[i] == 's')
 				{
