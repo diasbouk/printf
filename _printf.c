@@ -10,9 +10,7 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0;
-	long int number;
-	char c;
+	long int i = 0;
 	char *str;
 	va_list args;
 		va_start(args, format);
@@ -28,22 +26,13 @@ int _printf(const char *format, ...)
 				if (format[i] == 'c')
 				{
 					i++;
-					c = va_arg(args, int);
-					put_char(c);
+					put_char(va_arg(args, int));
 				}
 				else if (format[i] == 's')
 				{
 					i++;
 					str = va_arg(args, char *);
 					put_string(str);
-					if (str == NULL)
-						put_string("(null)");
-				}
-				else if (format[i] == 'd' || format[i] == 'i')
-				{
-					i++;
-					number = va_arg(args, int);
-					print_number(number);
 				}
 				else if (format[i] == '%')
 				{

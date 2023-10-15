@@ -7,10 +7,12 @@
 void put_string(char *str)
 {
 	int i = 0;
-	if (str != NULL)
-		while (str[i] != '\0')
-		{
-			put_char(str[i]);
-			i++;
-		}
+		if (str != NULL)
+			while (str[i] != '\0')
+			{
+				put_char(str[i]);
+				i++;
+			}
+		if (str == NULL)
+			put_string("(null)");
 }
