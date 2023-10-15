@@ -23,9 +23,9 @@ int _printf(const char *format, ...)
 				i++;
 				if (format[i] == 'c')
 				{
+					i++;
 					c = va_arg(args, int);
 					put_char(c);
-					i++;
 				}
 				else if (format[i] == 's')
 				{
@@ -45,11 +45,22 @@ int _printf(const char *format, ...)
 					number = va_arg(args, unsigned int);
 					print_number(number);
 				}
+				else if (format[i] == '%')
+				{
+					put_char(format[i - 1]);
+					i++;
+				}
 				else
+				{
 					put_char('%');
+					putchar(format[i]);
+				}
 			}
-			put_char(format[i]);
-			i++;
+			else
+			{
+				put_char(format[i]);
+				i++;
+			}
 		}
 		va_end(args);
 		return (i);
