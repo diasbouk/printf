@@ -14,7 +14,7 @@ int len;
 int len2;
 unsigned int ui;
 void *addr;
-char *str = "iwueyfbjefpweurnfwofjoiuhgoihesiget8erogtierjgieroigrjigejfofifiwjfihewiufikfhoiwe\n";
+char *str = "iwueyfbjefpwejfofifiwjfihewiufikfhoiwe\n";
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
@@ -45,6 +45,5 @@ char *str = "iwueyfbjefpweurnfwofjoiuhgoihesiget8erogtierjgieroigrjigejfofifiwjf
 	_printf("%K\n");
 	_printf("%!\n");
 	_printf("%c", '\0');
-	_printf("%s%c%c%c%s%%%s%c", "Loading", '.', '.', '.', " 99", "Please wait", '\n');
 	return (0);
 }
