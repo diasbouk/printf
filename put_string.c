@@ -6,10 +6,15 @@
  */
 void put_string(char *str)
 {
+	if (str != NULL)
+	{
 	int i = 0;
 	while (str[i] != '\0')
 	{
 		put_char(str[i]);
 		i++;
 	}
+	}
+	else
+		return;
 }

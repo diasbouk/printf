@@ -14,7 +14,7 @@ int main(void)
     char * str = "dias .";
 
     printf("%c  %c %%   %s %s   \n", 65, 'a', "string" , str);
-   _printf("some random shit%c  Did it work ?", 48);
+   _printf("You  %s nothing Son\n", (char *)0);
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
