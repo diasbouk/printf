@@ -1,7 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * print_number - main func
+ * @n: number
+ */
 void print_number(int n)
 {
 	long m;
@@ -11,7 +14,6 @@ void print_number(int n)
 		if (number < 0)
 		{
 			number = -number;
-			put_char('-');
 		}
 
 		m = 1;
