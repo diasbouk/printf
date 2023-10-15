@@ -14,7 +14,6 @@ void print_number(int n)
 		if (number < 0)
 		{
 			number = -number;
-			put_char('-');
 		}
 
 		m = 1;

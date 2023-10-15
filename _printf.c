@@ -33,17 +33,20 @@ int _printf(const char *format, ...)
 					str = va_arg(args, char *);
 					put_string(str);
 				}
-				else if (format[i] == '%')
-				{
-					i++;
-					put_char(format[i - 1]);
-				}
-				else if (format[i] == 'd' || format[i] == 'u' || format[i] == 'i')
+				else if (format[i] == 'd' || format[i] == 'i')
 				{
 					i++;
 					number = va_arg(args, long int);
 					print_number(number);
 				}
+				else if (format[i] == 'u')
+				{
+					i++;
+					number = va_arg(args, unsigned int);
+					print_number(number);
+				}
+				else
+					put_char('%');
 			}
 			put_char(format[i]);
 			i++;
