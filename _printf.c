@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 					if (str != NULL)
 						put_string(str);
 					else
-						return (-1);
+						put_string("(null)");
 				}
 				else if (format[i] == '%')
 				{
