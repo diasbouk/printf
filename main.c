@@ -28,6 +28,10 @@ int main(void)
 	len2 = printf("Percent:[%%]\n");
 	 _printf("Len:[%d]\n", len);
 	 printf("Len:[%d]\n", len2);
+	 _printf("%s%c%c%c%s%%%s%c", "Loading", '.', '.', '.', " 99", "Please wait", '\n');
+	 _printf(" oiuegfvqdq %%\n");
+	 _printf("%K\n");
+	 _printf("%!\n");
 
 	 return (0);
 }
