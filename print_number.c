@@ -2,13 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_number(unsigned int n)
+void print_number(int n)
 {
 	long m;
 	int c;
 	long  int number;
-
-		number = n ;
+		number = n;
 		if (number < 0)
 		{
 			number = -number;

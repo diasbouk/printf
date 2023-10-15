@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 				else if ( format[i] == 'd' || format[i] == 'u' || format[i] == 'i')
 				{
 					i++;
-					number = va_arg(args, int);
+					number = va_arg(args,long int);
 					print_number(number);
 				}
 				else

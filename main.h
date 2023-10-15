@@ -9,5 +9,5 @@
 int put_char(char c);
 void put_string(char *str);
 int _printf(const char *format, ...);
-void print_number(unsigned int n);
+void print_number(int n);
 #endif
