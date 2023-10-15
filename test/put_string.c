@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * put_string - function to put string
+ * @str: string to be printed
+ */
+void put_string(char *str)
+{
+	int i = 0;
+	while (*str)
+	{
+		put_char(str[i]);
+		i++;
+	}
+}
