@@ -6,13 +6,11 @@
  */
 void put_string(char *str)
 {
-	if (str != NULL)
-	{
 	int i = 0;
+	if (str != NULL)
 		while (str[i] != '\0')
 		{
 			put_char(str[i]);
 			i++;
-		}
 		}
 }

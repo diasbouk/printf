@@ -46,6 +46,13 @@ char *str = "iwueyfbjefpwejfofifiwjfihewiufikfhoiwe\n";
 	_printf("%!\n");
 	_printf("%c", '\0');
 	_printf("%%\n");
-	_printf("print a single precent %");
+	_printf("print a single precent %\n");
+	_printf("%");
+	_printf("%c", '\0');
+	_printf(NULL);
+	_printf("man ggc : \n%s\n", "strrrrrrrrrrrr");
+	_printf("css%cccs%scscscs\n", 'T', "Test");
+	_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", "Please wait", '\n');
+	_printf("char pointer null %s\n", (char *)0);
 	return (0);
 }

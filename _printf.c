@@ -36,6 +36,8 @@ int _printf(const char *format, ...)
 					i++;
 					str = va_arg(args, char *);
 					put_string(str);
+					if (str == NULL)
+						put_string("(null)");
 				}
 				else if (format[i] == 'd' || format[i] == 'i')
 				{
