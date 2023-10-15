@@ -11,9 +11,10 @@ int main(void)
 {
     int len;
     int len2;
+    char * str = "dias .";
 
-    printf("%c  %c\n", 65, 'a');
-    _printf("%c  %c\n", 65, 'a');
+    printf("%c  %c %%   %s %s   \n", 65, 'a', "string" , str);
+   _printf("%c  %c %%   %s %s   \n", 65, 'a', "string", str);
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
     _printf("Length:[%d, %i]\n", len, len);
