@@ -10,10 +10,8 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0;
-	long int number;
-	char c;
-	char *str;
+	long int number, i = 0;
+	char c, *str;
 	va_list args;
 		va_start(args, format);
 		if (format == NULL || (format[0] == '%' && !format[1]))

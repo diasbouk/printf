@@ -1,7 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * print_number - main func
+ * @n: number
+ */
 void print_number(int n)
 {
 	long m;
