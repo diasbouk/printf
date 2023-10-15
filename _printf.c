@@ -33,10 +33,7 @@ int _printf(const char *format, ...)
 				{
 					i++;
 					str = va_arg(args, char *);
-					if (str != NULL)
-						put_string(str);
-					else
-						put_string("(null)\n");
+					put_string(str);
 				}
 				else if (format[i] == '%')
 				{

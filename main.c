@@ -11,7 +11,7 @@
 int main(void)
 {
 	int len, len2;
-   _printf("uycjh %spowid", (char *)0);
+   _printf("%s",(char *)0);
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");

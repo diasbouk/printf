@@ -15,6 +15,4 @@ void put_string(char *str)
 		i++;
 	}
 	}
-	else
-		return;
 }
