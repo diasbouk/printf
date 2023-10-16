@@ -18,6 +18,7 @@ int main(void)
 		_printf("dias & enissay\n");
 		_printf("here we go again !\n");
 		_printf("another on here\n");
+		_printf("---------------\n");
 		printf("Let's try to printf a simple sentence.\n");
 		_printf("test %s\n", "string");
 		_printf("%%\n");
