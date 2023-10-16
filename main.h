@@ -7,7 +7,8 @@
 #include <stdarg.h>
 #include <limits.h>
 int put_char(char c);
-void put_string(char *str);
+int put_string(char *str);
+int handle_format(const char *format, va_list args);
 int _printf(const char *format, ...);
 void handle_spec(char spec, int i);
 #endif
