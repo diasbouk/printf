@@ -3,16 +3,23 @@
 /**
  * put_string - function to put string
  * @str: string to be printed
+ * Return: number of chars
  */
-void put_string(char *str)
+int put_string(char *str)
 {
 	int i = 0;
 		if (str != NULL)
-			while (str[i] != '\0')
+		{
+			while (*str)
 			{
-				put_char(str[i]);
+				put_char(*str);
 				i++;
 			}
+		}
 		if (str == NULL)
+		{
 			put_string("(null)");
+			i = 6;
+		}
+		return (i);
 }

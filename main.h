@@ -6,9 +6,9 @@
 #include <string.h>
 #include <stdarg.h>
 #include <limits.h>
+int handle_format(const char *format, va_list chars);
 int put_char(char c);
-void put_string(char *str);
+int put_string(char *str);
 int _printf(const char *format, ...);
-void print_number(int n);
 void handle_spec(char spec, int i);
 #endif
