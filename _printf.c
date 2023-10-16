@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		{
 			return (-1);
 		}
-		sum = handle_format(format, chars);
+			sum = handle_format(format, chars);
 		va_end(chars);
 		return (sum);
 }

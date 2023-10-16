@@ -18,5 +18,6 @@ int main(void)
 		 _printf("%s\n", "");
 		 _printf("----------------\n");
 		 _printf("%s\n", (char *)0);
+		 _printf("Numbers : %d %i\n", 21, 34);
 	return (0);
 }

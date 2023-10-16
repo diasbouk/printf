@@ -14,19 +14,16 @@
 */
 int handle_format(const char *format, va_list args)
 {
-	int sum = 0;
-	int c;
+	int sum = 0, num;
 	char *str;
 		while (*format)
 		{
 			if (*format == '%')
 			{
-
 				format++;
 				if (*format == 'c')
 				{
-					c = va_arg(args, int);
-					put_char(c);
+					put_char(va_arg(args, int));
 					format++;
 					sum++;
 				}
@@ -34,6 +31,12 @@ int handle_format(const char *format, va_list args)
 				{
 					str = va_arg(args, char *);
 					sum += put_string(str);
+					format++;
+				}
+				else if (*format == 'd' || *format == 'i')
+				{
+					num = va_arg(args, int);
+					sum += print_number(num);
 					format++;
 				}
 				else if (*format == '%')
@@ -52,4 +55,3 @@ int handle_format(const char *format, va_list args)
 		}
 		return (sum);
 }
-
