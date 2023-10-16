@@ -14,7 +14,6 @@ int main(void)
 		_printf("here we go\n");
 		_printf("!\n");
 		_printf("this is alx\n");
-		_printf("hello world\n");
 		_printf("this is.\n");
 		_printf("dias & enissay\n");
 		_printf("here we go\n");
