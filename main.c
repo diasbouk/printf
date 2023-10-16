@@ -12,6 +12,7 @@ int main(void)
 {
 		_printf("Let's try to printf a simple sentence.\n");
 		_printf("here we go\n");
+		_printf("boys are playing right now!!\n");
 		_printf("this is.\n");
 		_printf("dias & enissay\n");
 		_printf("here we go\n");
