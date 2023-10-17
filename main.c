@@ -49,5 +49,7 @@ int main(void)
 		_printf("Len:[%d]\n", len);
 		printf("Len:[%d]\n", len2);
 		_printf("%b\n", 98);
+		len = _printf("%K");
+		printf("%d\n", len);
 		return (0);
 }
