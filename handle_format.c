@@ -50,7 +50,7 @@ int handle_format(const char *format, va_list args)
 			{
 				put_char(*format);
 				format++;
-				sum += 2;
+				sum++;
 			}
 		}
 		return (sum);
