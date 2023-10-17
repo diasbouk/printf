@@ -30,6 +30,7 @@ int main(void)
 		_printf("unsigned int ui\n");
 		_printf("int , void\n");
 		_printf("%d\n");
+		_printf("main\n");
 		_printf("\\\\\\\\\\\\\\\n");
 		_printf("always 0\n");
 		_printf("char is a character\n");
