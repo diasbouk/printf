@@ -39,18 +39,24 @@ int handle_format(const char *format, va_list args)
 					sum += print_number(num);
 					format++;
 				}
+				else if (*format == 'b')
+				{
+					num = va_arg(args, int);
+					sum += handle_binary(num);
+					format++;
+				}
 				else if (*format == '%')
 				{
 					put_char('%');
-					sum++;
 					format++;
+					sum++;
 				}
 			}
 			else
 			{
 				put_char(*format);
-				sum++;
 				format++;
+				sum++;
 			}
 		}
 		return (sum);

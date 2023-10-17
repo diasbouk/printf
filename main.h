@@ -12,4 +12,5 @@ int handle_format(const char *format, va_list args);
 int _printf(const char *format, ...);
 void handle_spec(char spec, int i);
 int print_number(long int n);
+int handle_binary(int number);
 #endif
