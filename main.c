@@ -17,6 +17,7 @@ int main(void)
 		_printf("Let's try to printf a simple sentence.\n");
 		_printf("here we go\n");
 		_printf("printf\n");
+		_printf("is\n");
 		_printf("!\n");
 		_printf("this is alx\n");
 		_printf("this is.\n");
