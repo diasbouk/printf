@@ -23,6 +23,7 @@ int main(void)
 		_printf("here we go again !\n");
 		_printf("another on here\n");
 		_printf("-------another one here:--------\n");
+		_printf("int , void\n");
 		_printf("\\\\\\\\\\\\\\\n");
 		_printf("always 0\n");
 		_printf("char is a character\n");
