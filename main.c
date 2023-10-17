@@ -27,6 +27,7 @@ int main(void)
 		_printf("always 0\n");
 		_printf("char is a character\n");
 		_printf("char is a character\n");
+		_printf("c is not easy\n");
 		printf("Let's try to printf a simple sentence.\n");
 		_printf("test %s\n", "string");
 		_printf("%%\n");
