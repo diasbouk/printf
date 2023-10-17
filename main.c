@@ -29,6 +29,7 @@ int main(void)
 		_printf("-------another one here:--------\n");
 		_printf("unsigned int ui\n");
 		_printf("int , void\n");
+		_printf("%d\n");
 		_printf("\\\\\\\\\\\\\\\n");
 		_printf("always 0\n");
 		_printf("char is a character\n");
