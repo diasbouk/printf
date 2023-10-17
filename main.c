@@ -18,6 +18,7 @@ int main(void)
 		_printf("here we go\n");
 		_printf("printf\n");
 		_printf("is\n");
+		_printf("alx\n");
 		_printf("!\n");
 		_printf("this is alx\n");
 		_printf("this is.\n");
