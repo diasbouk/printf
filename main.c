@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Entry point.
  *
- * Return: Always 0
+ * Return: Always 0 (success).
  *
  */
 int main(void)
@@ -15,6 +15,14 @@ int main(void)
 	unsigned int ui;
 	void *addr;
 		_printf("Let's try to printf a simple sentence.\n");
+		_printf("here we go\n");
+		_printf("!\n");
+		_printf("this is alx\n");
+		_printf("this is.\n");
+		_printf("dias & enissay\n");
+		_printf("here we go again !\n");
+		_printf("another on here\n");
+		_printf("-------another one here:--------\n");
 		printf("Let's try to printf a simple sentence.\n");
 		_printf("test %s\n", "string");
 		_printf("%%\n");
