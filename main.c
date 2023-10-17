@@ -30,6 +30,7 @@ int main(void)
 		_printf("-------another one here:--------\n");
 		_printf("unsigned int ui\n");
 		_printf("int , void\n");
+		_printf("rutern 0\n");
 		_printf("%d\n");
 		_printf("main\n");
 		_printf("\\\\\\\\\\\\\\\n");
