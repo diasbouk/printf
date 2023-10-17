@@ -23,6 +23,7 @@ int main(void)
 		_printf("!\n");
 		_printf("this is alx\n");
 		_printf("this is.\n");
+		_printf("len and len2\n");
 		_printf("dias & enissay\n");
 		_printf("here we go again !\n");
 		_printf("another on here\n");
