@@ -19,6 +19,7 @@ int main(void)
 		_printf("printf\n");
 		_printf("is\n");
 		_printf("a\n");
+		_printf("project.\n");
 		_printf("!\n");
 		_printf("this is alx\n");
 		_printf("this is.\n");
